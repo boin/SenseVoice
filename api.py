@@ -111,6 +111,8 @@ class PRIData(BaseModel):
 class PRIResponse(BaseModel):
     result: PRIData = Field(description="PRI 分析结果")
 
+TARGET_FS = 16000
+
 
 class Language(str, Enum):
     auto = "auto"
